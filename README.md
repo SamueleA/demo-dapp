@@ -38,7 +38,11 @@ Notice how you can pay gas fees for a transaction in either MATIC token or USDC 
 
 ![Transfer ERC-20 token on Polygon](./screenshots/screen-txn.png)
 
-
+## Testing the sequence web3modal integration 
+1. Install depencies and build the web3modal package in the sequence feature branch. (https://github.com/SamueleA/web3modal/tree/feature/sequence-wallet)
+2. Link the package with `yarn link`
+3. In the demo app, install the dependencies with `yarn` and run `yarn link web3modal`. You might need to delete the web3modal package from node_modules, if it doesn't work the first time.
+4. Run `yarn start` to start the app.
 
 ## LICENSE
 
