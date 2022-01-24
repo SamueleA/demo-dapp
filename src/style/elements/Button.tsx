@@ -20,9 +20,12 @@ export const Button = ({ sx, to, onClick, ...props }: ButtonProps) => {
     fontFamily: 'body',
     transition: 'all 0.2s linear',
     ...sx,
-    '&:hover': {
+    '&:disabled': {
+      color: '#666666'
+    },
+    '&:hover:enabled': {
       color: 'primary'
-    }
+    },
   }
 
   return <_Button sx={style} onClick={onClick} {...props} />
