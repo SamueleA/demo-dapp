@@ -24,7 +24,7 @@ const HomeRoute = () => {
         package: sequence,
         options: {
           appName: 'demo app123',
-          network: 'mainnet',
+          defaultNetwork: 'mainnet',
         }
       }
     };
